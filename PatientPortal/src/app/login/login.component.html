@@ -1,0 +1,86 @@
+<form>
+<div class="row mb-4" class="container login-form">
+
+    <div class="card col-md-3" class="text-center">
+
+       <!-- <div class="card">
+
+           <div class="text-center"> -->
+
+               <h1>AdminUser Login</h1>
+
+           </div>
+
+
+
+<div class="container login-form" >
+
+<form>
+
+    <form class="form-outlin mb-4" #loginForm="ngForm" (ngSubmit)="login()">
+
+       <input required name="userName" class="form-control" type="string" id="username" placeholder="Enter user name" [(ngModel)]="user.username">
+
+  <br>
+
+  <!-- <span class="text-danger" *ngIf="loginForm.controls['username'].dirty && loginForm.hasError('required','username')">*Username is required</span> -->
+
+ <input required name="password" class="form-control"  type="password" id="password" placeholder="Enter password" [(ngModel)]="user.password">
+<!-- 
+ <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is required</span> -->
+
+ <br>
+
+ <button type="submit" class="btn btn-success" [disabled]="loginForm.invalid">Login</button>
+
+</form>
+</form>
+
+<!-- Section: Design Block -->
+<!-- <section class=" text-center text-lg-start">
+    
+    <div class="card mb-3">
+      <div class="row g-0 d-flex align-items-center">
+        <div class="col-lg-4 d-none d-lg-flex">
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body py-5 px-md-5">
+  
+            <form> -->
+              <!-- Email input -->
+              <!-- <div class="form-outline mb-4">
+                
+                <label class="form-label" for="form2Example1">Username</label>
+                <input type="email" id="form2Example1" class="form-control" />
+              </div> -->
+  
+              <!-- Password input -->
+              <!-- <div class="form-outline mb-4">
+                
+                <label class="form-label" for="form2Example2">Password</label>
+                <input type="password" id="form2Example2" class="form-control" />
+              </div>
+   -->
+              <!-- 2 column grid layout for inline styling -->
+               
+  
+              <!-- Submit button -->
+              <!-- <button type="button" class="btn btn-primary btn-block mb-4">Login</button>
+
+              <div class="row mb-4">
+  
+                <div class="col"> -->
+                  <!-- Simple link -->
+                  <!-- <a href="#!">Forgot password?</a>
+                </div>
+              </div>
+  
+            </form>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- Section: Design Block -->
+  

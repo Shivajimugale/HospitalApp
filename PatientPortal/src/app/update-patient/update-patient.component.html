@@ -1,0 +1,55 @@
+<form>
+
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+       
+            <h3 class="text-center"> Update Patient</h3>
+           
+                <form (ngSubmit)="onupdate()">
+<!-- 
+                    <div class="form-group">
+                    <h5> PatientId </h5>
+                    <input type="text" class="form-control" id="patientId" [(ngModel)]="patient.patientId"
+                      name="patientId">
+                    </div> -->
+
+                    
+                    <div class="form-group">
+                        <h5> PatientName </h5>
+                        <input type="text" class="form-control" id="patientName" [(ngModel)]="patient.patientName"
+                          name="patientName">
+                        </div>
+
+                         
+                    <div class="form-group">
+                        <h5> PatientAddress </h5>
+                        <input type="text" class="form-control" id="patientAddress" [(ngModel)]="patient.patientAddress"
+                          name="patientAddress">
+                        </div>
+
+                        
+                    <div class="form-group">
+                        <h5> PatientDOB </h5>
+                        <input type="text" class="form-control" id="patientDOB" [(ngModel)]="patient.patientDOB"
+                          name="patientDOB">
+                        </div>
+
+                         
+                    <div class="form-group">
+                        <h5> PatientEmail </h5>
+                        <input type="text" class="form-control" id="patientEmail" [(ngModel)]="patient.patientEmail"
+                          name="patientEmail">
+                        </div>
+
+                         
+                    <div class="form-group">
+                        <h5> PatientContactNumber </h5>
+                        <input type="text" class="form-control" id="patientContactNumber" [(ngModel)]="patient.patientContactNumber"
+                          name="patientContactNumber">
+                        </div>
+                        <br />
+                        <button class="btn btn-success" type="submit">Submit</button>
+
+                </form>
+            </div>
+       
+</form>

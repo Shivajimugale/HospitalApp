@@ -1,0 +1,104 @@
+<!-- <div class="container text-center" style="width:600px"> -->
+   
+   
+    <!-- <app-fileuploading></app-fileuploading>
+     -->
+ 
+<nav class="navbar navbar-expand-sm bg-success navbar-dark">
+    <h2> Patient Details</h2>
+    <ul >
+        
+      <!-- <li class = "nav-item">
+       
+        
+      </li> -->
+     <br>
+       <!-- <li class = "nav-item">
+       <button (click)="createpatient()">Add Patient</button>
+      </li> 
+      -->
+      <br>
+      <!-- <div class="container-fluid">
+        <button (click)="Uploadfile()" class="logInBtn btn btn-success">
+            Uploadfile
+        </button>
+      </div>  -->
+      
+    </ul>
+  </nav>
+  
+  <!-- <h1 class="text-center"> {{title}}</h1> -->
+  <div class = "container">
+    <!-- <app-fileuploading></app-fileuploading>
+    <router-outlet></router-outlet>  -->
+  <!-- </div> -->
+  
+  
+  
+
+
+
+<html>
+
+    <head>
+
+        <style>
+
+            h2{text-align: center;}          
+
+        </style>
+
+    </head>
+<!-- <div class = "row"> -->
+   
+<!-- </div> -->
+
+<table class = "table table-striped table-bordered">
+    <thead>
+
+        <tr>
+
+            <th> PatientId</th>
+            
+            <th> Name</th>
+            
+            <th> Address</th>
+            
+            <th> DateOfBirth</th>
+            
+            <th> Email</th>
+            
+            <th> ContactNumber</th>
+
+            <th> DrugId</th>
+
+            <th> DrugName</th>
+            
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor = "let patient of patients" >
+            <td> {{patient.patientId}} </td>
+            <td> {{patient.patientName}} </td>
+            <td> {{patient.patientAddress}} </td>
+            <td> {{patient.patientDOB}} </td>
+            <td> {{patient.patientEmail}} </td>
+            <td> {{patient.patientContactNumber}} </td>
+            <td> {{patient.patientDrugId}} </td>
+            <td> {{patient.patientDrugName}} </td>
+            <td>
+                <button (click) = "updatePatient(patient.patientId)" class = "btn btn-primary"> Update</button>
+                
+                <button (click) = "deletePatient(patient.patientId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                
+                <!-- <button (click) = "patientView(patient.patientId)" class = "btn btn-primary" style="margin-left: 10px">View</button> -->
+            </td>
+        </tr>
+    </tbody>
+</table>
+</html>
+
+
+
